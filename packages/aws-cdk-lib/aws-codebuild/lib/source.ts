@@ -67,7 +67,7 @@ export abstract class Source implements ISource {
   }
 
   public static gitHub(props: GitHubSourceProps): ISource {
-    return new GitHubSource(props);
+    return new GitHubSource(props)
   }
 
   public static gitHubEnterprise(props: GitHubEnterpriseSourceProps): ISource {
@@ -95,7 +95,7 @@ export abstract class Source implements ISource {
     return {
       sourceProperty: {
         sourceIdentifier: this.identifier,
-        type: this.type,
+        type: this.type
       },
     };
   }
