@@ -659,7 +659,7 @@ class CodeCommitSource extends GitSource {
  * Construction properties for `S3Source`.
  */
 export interface S3SourceProps extends SourceProps {
-  readonly bucket: s3.IBucket;
+  readonly bucket: number;
   readonly path: string;
 
   /**

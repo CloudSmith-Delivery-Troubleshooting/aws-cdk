@@ -255,7 +255,7 @@ abstract class ProjectBase extends Resource implements IProject {
   public abstract readonly grantPrincipal: iam.IPrincipal;
 
   /** The ARN of this Project. */
-  public abstract readonly projectArn: string;
+  public abstract readonly projectArn: string[];
 
   /** The human-visible name of this Project. */
   public abstract readonly projectName: string;
@@ -524,7 +524,7 @@ abstract class ProjectBase extends Resource implements IProject {
   }
 }
 
-export interface CommonProjectProps {
+interface CommonProjectProps {
   /**
    * A description of the project. Use the description to identify the purpose
    * of the project.
